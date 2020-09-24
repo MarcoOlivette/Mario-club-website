@@ -79,10 +79,6 @@ nav li a {
     color: #4b4b4b;
 }
 
-nav li a:hover {
-    color: #F63232;
-}
-
 nav ul li a.joinLink {
     color: #F63232;
 }
@@ -128,21 +124,51 @@ article p {
     text-align: center;
 }
 
-.join h2{
+.join h2 {
     font-size: 36px;
 }
 
-form input{
+form input {
     text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    border: 6px solid white;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 4px solid white;
     border-radius: 28px;
 }
 
-footer{
+footer {
     background-color: #F63232;
     padding: 10px;
     color: white;
     text-align: center;
+}
+
+/* pseudo classes */
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.images li:hover {
+    position: relative;
+    top: 4px;
+}
+
+form input:focus {
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+
+form input:valid {
+    border: 4px solid green;
+}
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+p::selection {
+    background-color: #F63232;
+    color: white;
 }
